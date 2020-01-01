@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<head>
+
+
+</head>
+
+
+
+<body>
+    <div id="content">
+    <h1>Name in a Blender</h1>
+    
+     <span>Your name:</span><br>
+
+     <input id="yourname" type="text" size="16" style="font-family: Arial;">
+     <br><br>
+     <span>Font:</span><br>
+        
+     <select id="font">
+            
+    <option>Arial</option> 
+    <option>Comic Sans MS</option> 
+    <option>Times New Roman</option>
+   
+
+    </select>
+    <br><br>
+        
+        <span>Position:</span>
+    <input id="random" name="pos" type="radio" value="rand" checked="checked"> Random
+    <input id="sequential" name="pos" type="radio" value="seq"> Sequential <br><br>
+  
+    <span>Go:</span>
+    <button id="blend" onclick="run()">Blend my name!</button>
+    <br><br>
+    <div id="output" > <!-- your blended characters go here --> </div>
+<p id="test"><br></p>
+</div>
+
+</body>
+    
+    
+    
+    
+    </html>

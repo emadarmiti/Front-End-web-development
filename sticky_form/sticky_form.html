@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Sticky Form
+    </title>
+    
+    <link rel="stylesheet" href="sticky_form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="sticky_form.js"></script>
+    <link rel="icon" href="header.PNG">
+</head>
+<body>
+   
+    <div id="container1">
+        
+            <section id="progressbar">
+
+                    <section id="step1">
+
+                        
+                        <button class="btn_bar"   id="stepnumber1">1</button>
+                    
+                    
+                    </section>
+    
+                    <section id="step2">
+    
+                        <div id="line2"></div>
+                        <button class="btn_bar"   id="stepnumber2">2</button>
+    
+    
+                    </section>
+                    <section id="step3">
+    
+                        <div id="line3"></div>
+                        <div id="stepnumber3">3</div>
+    
+                    </section>
+    
+    
+            </section>
+            
+            <section id="progress_bar_titles">
+
+                <div class="bar_title">PERSONAL DETAILS</div>
+                <div class="bar_title">CONTACT DETAILS</div>
+                <div class="bar_title">ACCOUNT SETUP</div>
+
+
+
+            </section>
+
+            
+
+        <section class="page" id="p1">
+            
+
+            <form id="form1" autocomplete="off" >
+
+                <p style="font-size: 140%;">
+                    PERSONAL DETAILS
+
+                </p>
+                <p style="font-size: 100%;">
+                    Step 1
+                
+                </p>
+                <p class="error" style="font-size: 80%; color: red;"><br></p>
+                <br>
+                <input class="p1" type="text" id="first_name" oninput="on_input('first_name')" placeholder="First Name" ><br><br>
+                <input class="p1" type="text"  id="last_name" oninput="on_input('last_name')"  placeholder="Last Name"><br><br>               
+                <input class="p1" type="date" oninput="on_input('date')"  id="date"><br><br>
+                <input type="radio"  name="gender" value="male" checked > Male&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio"  name="gender" value="female"> Female&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio"  name="gender" value="other" > Other<br><br>
+               
+                
+                
+                
+                
+
+            </form>
+            <button class="btn" onclick="next('p1','p2','next',1)">Next</button>
+
+
+        </section>
+        <section class="page" id="p2">
+            
+
+                <form id="form2" autocomplete="off" >
+    
+                    <p style="font-size: 140%;">
+                            CONTACT DETAILS
+    
+    
+                    </p>
+                    <p style="font-size: 100%;">
+                        Step 2
+                    
+                    </p>
+                    <p class="error" style="font-size: 80%; color: red;"><br></p>
+                    <br>
+                    
+                    <input type="email" class="p2" id="email"oninput="on_input('email')" placeholder="Email" ><br><br>
+                    <input type="tel" class="p2" id="tel" oninput="on_input('tel')" placeholder="Phone Number"><br><br>               
+                     <textarea  class="p2"  rows="5" id="address" oninput="on_input('address')" placeholder="Address" style="height: 100px; resize: none;" ></textarea><br><br>
+                    
+                    
+                    <br>
+                    
+    
+                </form>
+                <button class="btn" onclick="next('p2','p1','prev',2)">Pervious</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn" onclick="next('p2','p3','next',2)">Next</button>
+    
+        </section>
+      
+        <section class="page" id="p3">
+            
+
+                <form id="form3" autocomplete="off" >
+    
+                    <p style="font-size: 140%;">
+                            ACCOUNT SETUP
+    
+    
+                    </p>
+                    <p style="font-size: 100%;">
+                        Step 3
+                    
+                    </p>
+                    <p class="error" style="font-size: 80%; color: red;"><br></p>
+                    <br>
+                    <input type="password" class="p3" id="pass1" oninput="on_input('pass1')" placeholder="Password" ><br><br>
+                    <input type="password" class="p3" id="pass2" placeholder="Confirm Password"><br><br>               
+                    
+                   
+                    
+                    
+                    <br>
+                    
+    
+                </form>
+                <button class="btn" onclick="next('p3','p2','prev',3)">Pervious</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn" onclick="submit()">Submit</button>
+    
+                <br>
+    
+    
+            </section>
+            <section id="submited"><span>DATA SUBMITED</span></section>
+            <section class="page" id="p4" >
+                    
+                <p class="displayed_data" >PERSONAL DETAILS</p><br>
+                <div id="data_page1">
+                    <p class="data">First Name : </p>
+                    <p class="data">Last Name : </p>
+                    <p class="data">Birthdate : </p>
+                    <p class="data">Gender : </p>
+                </div><br>
+                <p class="displayed_data">CONTACT DETAILS</p><br>
+                <div id="data_page2">
+                    <p class="data">Email : </p>
+                    <p class="data">Phone Number : </p>
+                    <p class="data">Address : </p>
+                </div><br>
+                <p class="displayed_data">Password</p><br>
+                <div id="data_page3">
+                    <p class="data">Password : </p>
+                </div>
+                
+
+
+
+            </section>
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+
+
+
+</html>

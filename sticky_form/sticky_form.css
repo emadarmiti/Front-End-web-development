@@ -1,0 +1,213 @@
+*{
+
+    font-family: Century Gothic;
+
+
+}
+#p2 , #p4 , #p3{
+display: none;
+position: relative;
+left: -400px;
+opacity: 1;
+
+}
+#p1{
+display: block;
+position: relative;
+
+}
+
+
+body{
+
+    
+
+background: 
+linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+background-size: 900px 900px;
+}
+#container1{
+
+min-width: 600px;
+    
+    }
+
+.page{
+    
+    min-width:  350px;
+    width: 350px;
+	margin: 50px auto;
+	text-align: center;
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: gray;
+}   
+.btn{
+
+width: 90px;
+height: 35px;
+background-color: rgb(67, 150, 67);
+color: white;
+border: none;
+outline: none;
+
+}
+.p1 , .p3, .p2{
+border-radius: 3px;
+outline: none;
+border: 1px solid lightgrey;
+padding: 4px;
+padding-left: 6px;
+width: 290px;
+height: 30px;
+
+}
+
+
+#progressbar{
+
+display: flex;
+text-align: center;
+margin: 50px auto;
+margin-top: 39px;
+width: 380px;
+
+
+}
+#step1{display: flex;}
+#step2{display: flex;
+align-items: center;
+
+}
+#step3{display: flex;
+    align-items: center;}
+
+#stepnumber1{
+
+
+padding: 9px;
+padding-top: 4px;
+padding-bottom: 4px;
+background-color:  rgb(67, 150, 67);
+border-radius: 9%;
+color: white;
+}
+#stepnumber2{
+
+    background-color:  white;
+    padding: 9px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 9%;
+    
+
+
+}
+#stepnumber3{
+
+    background-color:  white;
+    padding: 9px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 9%;
+
+
+}
+#line2{
+
+height: 3px;
+width: 150px;
+background-color: white;
+
+}
+#line3{
+
+    height: 3px;
+    width: 150px;
+    background-color: white;
+    
+    }
+#progress_bar_titles{
+display: flex;
+font-size: 70%;
+width: 600px;
+text-align: center;
+margin: auto;
+margin-top: -40px;
+    }
+    
+.bar_title{
+    
+    margin-left: 77Px;
+    color: white;
+
+}
+.displayed_data{
+text-align: center;
+
+    outline: none;
+    
+    padding: 4px;
+    padding-left: 6px;
+    width: 190px;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+
+font-size: 120%;
+
+}
+.data{
+
+
+    text-align: center;
+   
+    font-size: 80%;
+}
+#submited{
+
+
+    font-size: 180%;
+    line-height: 0.5;
+    border-radius: 3%;
+    color: white;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    display: none;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+#submited span::after, span::before {
+
+    border-bottom :1.5px solid  rgb(67, 150, 67);
+    width: 50px;
+    content: "";
+    position: absolute;
+    height: 5px;
+    top: 0;
+}
+#submited span{
+
+
+    display: inline-block;
+    position: relative;  
+}
+#submited span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  #submited span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+.btn_bar{
+
+
+    outline: none;
+    border: none;
+}

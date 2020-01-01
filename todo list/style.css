@@ -1,0 +1,47 @@
+body{
+
+   
+    font-family: Century Gothic;
+    margin-top: 50px;
+    margin:auto;
+    width: 30%;
+    text-align: center;
+background-color: Thistle  ;
+}
+#content{
+
+margin-top: 30px;;
+background-color: white;
+padding: 10px;
+border-radius: 5px;
+padding-bottom: 30px;
+
+}
+li{
+    text-align: left;
+}
+p{
+
+    font-size: 30px;
+    font-style: none;
+
+
+}
+#error{
+
+    font-size: 20px;
+    color: red;
+}
+button{
+
+    border: none;
+    padding: 9px;
+    background-color: 		#9370DB 	;
+    color :white
+}
+input{
+    padding: 9px;
+    width: 200px;
+    border: 1px solid lightgray;
+    outline: none;
+}
